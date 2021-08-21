@@ -28,7 +28,6 @@ function getStorage(storageCost) {
   totaStorageCost.innerText = storageCost;
   totalPrice();
 }
-
 //  delivery
 document.getElementById("free-delivery").addEventListener("click", function () {
   getDeliveryCost(0);
@@ -38,14 +37,13 @@ document
   .addEventListener("click", function () {
     getDeliveryCost(20);
   });
-
 // delivery common function
 function getDeliveryCost(deliveryCost) {
   const delivery = document.getElementById("delivery-cost");
   delivery.innerText = deliveryCost;
   totalPrice();
 }
-
+// total price calculate
 function totalPrice() {
   const memoryCost = parseInt(document.getElementById("memory-cost").innerText);
   const storageCost = parseInt(
@@ -58,7 +56,6 @@ function totalPrice() {
   document.getElementById("total-price").innerText = totalPrice;
   document.getElementById("total").innerText = totalPrice;
 }
-
 // promo code
 function matchCode() {
   let input = document.getElementById("input-code").value;
