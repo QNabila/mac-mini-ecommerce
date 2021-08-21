@@ -1,3 +1,29 @@
-.container{
-    display: flex;
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+* {
+  font-family: "PT Sans", sans-serif;
+}
+/* image animation */
+.pc-img {
+  transition: transform 250ms;
+}
+.pc-img:hover {
+  transform: translateY(-30px);
+}
+/* apply button style */
+.apply-button {
+  border: none;
+  padding: 4px 23px;
+  background-color: rgba(255, 140, 0, 0.836);
+  border-radius: 3px;
+}
+.apply-button:hover {
+  background-color: rgb(41, 41, 41);
+}
+/* remove bootstrap button focus style */
+.btn:focus,
+.btn:active,
+.btn:hover {
+  box-shadow: none !important;
+  outline: 0;
 }

@@ -67,8 +67,7 @@ function matchCode() {
     const total = document.getElementById("total").innerText;
     const discountPrice = total - total * (20 / 100);
     document.getElementById("total").innerText = discountPrice;
-  }
-  else{
+  } else {
     document.getElementById("input-code").value = "";
   }
 }
